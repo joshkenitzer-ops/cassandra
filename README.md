@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/29299960/README.md)
+[README.md](https://github.com/user-attachments/files/29300424/README.md)
 # Cassandra
 
 > *She always told the truth. Now she has a UI.*
@@ -31,7 +31,7 @@ Each finding is returned with a severity rating and a recommended fix.
 
 **v0.1**: code and test suite only. Not yet runnable as a standalone tool.
 
-- 154 passing tests (pytest)
+- 154 passing tests (Jest)
 - Core evaluation logic complete
 - CLI and UI in development
 
@@ -41,14 +41,9 @@ Each finding is returned with a severity rating and a recommended fix.
 
 ```
 cassandra/
-├── cassandra/
-│   ├── __init__.py
-│   ├── evaluator.py        # Core red-team evaluation logic
-│   ├── checks/             # Individual adversarial checks
-│   └── models.py           # Input/output data models
-├── tests/
-│   └── test_evaluator.py   # 154 passing tests
-├── pyproject.toml
+├── Cassandra.jsx                    # Core evaluation logic and UI
+├── cassandra.test.js                # Unit tests
+├── cassandra.integration.test.js    # Integration tests
 └── README.md
 ```
 
@@ -80,3 +75,8 @@ Most prompt failures are discoverable before anyone uses the prompt. Ambiguous i
 ---
 
 *[Josh Kenitzer](https://github.com/joshkenitzer-ops) · Staff Learning Designer, Pedagogy Lead, AI Education Researcher*
+
+
+Part of the [Lore](https://github.com/joshkenitzer-ops/lore) toolkit.
+
+---
