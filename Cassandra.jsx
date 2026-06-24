@@ -201,7 +201,7 @@ export default function PromptRedTeam() {
     setResult(null);
 
     try {
-      cconst res = await fetch("/api/evaluate", {
+      const res = await fetch("/api/evaluate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
