@@ -201,7 +201,7 @@ export default function PromptRedTeam() {
     setResult(null);
 
     try {
-      const res = await fetch("https://api.anthropic.com/v1/messages", {
+      cconst res = await fetch("/api/evaluate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
