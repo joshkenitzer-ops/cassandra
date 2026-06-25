@@ -1,3 +1,5 @@
+[README.md](https://github.com/user-attachments/files/29339928/README.md)
+
 # Cassandra
 
 > *She always told the truth. Now she has a UI.*
@@ -26,13 +28,17 @@ Each finding is returned with a severity rating and a recommended fix.
 
 ---
 
+## Live Demo
+
+[cassandra-app-theta.vercel.app](https://cassandra-app-theta.vercel.app)
+
 ## Status
 
-**v0.1**: code and test suite only. Not yet runnable as a standalone tool.
+**v0.1**: live and deployed.
 
 - 154 passing tests (Jest)
 - Core evaluation logic complete
-- CLI and UI in development
+- Deployed via Vercel at cassandra-app-theta.vercel.app
 
 ---
 
