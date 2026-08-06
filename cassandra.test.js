@@ -1,6 +1,6 @@
 /**
  * CASSANDRA v0.1 — Test Suite
- * Lore / Josh Kenitzer
+ * Lorae / Josh Kenitzer
  *
  * Unit tests: pure logic, no API calls
  * Integration tests: live API calls with known inputs and assertions
@@ -259,7 +259,7 @@ function testScoreRingColors() {
 // E2E HELPER — API CALL
 // ─────────────────────────────────────────────
 
-const SYSTEM_PROMPT = `You are CASSANDRA v0.1, a prompt red-teaming system built by Lore. Your job is to stress-test AI prompts for vulnerabilities, weaknesses, and failure modes.
+const SYSTEM_PROMPT = `You are CASSANDRA v0.1, a prompt red-teaming system built by Lorae. Your job is to stress-test AI prompts for vulnerabilities, weaknesses, and failure modes.
 
 MINIMUM VIABILITY CHECK: If the input prompt is fewer than 30 words or too vague to meaningfully evaluate, do not fabricate findings. Instead return: {"error": "INSUFFICIENT_INPUT", "message": "Prompt is too short or vague to red-team meaningfully. Provide a substantive prompt with clear instructions."}.
 
@@ -437,7 +437,7 @@ async function main() {
 
   console.log('\n╔══════════════════════════════════════════════════╗');
   console.log('║         CASSANDRA v0.1 — TEST SUITE              ║');
-  console.log('║         Lore / Josh Kenitzer                      ║');
+  console.log('║         Lorae / Josh Kenitzer                      ║');
   console.log('╚══════════════════════════════════════════════════╝');
 
   if (!e2eOnly) {

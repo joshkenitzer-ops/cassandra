@@ -1,6 +1,6 @@
 /**
  * CASSANDRA v0.1 — Integration Test Suite
- * Lore / Josh Kenitzer
+ * Lorae / Josh Kenitzer
  *
  * Integration tests verify the full request/response pipeline including:
  * - API contract compliance (request shape, headers, model)
@@ -460,7 +460,7 @@ function testErrorPropagation() {
 async function main() {
   console.log('\n╔══════════════════════════════════════════════════════════╗');
   console.log('║       CASSANDRA v0.1 — INTEGRATION TEST SUITE            ║');
-  console.log('║       Lore / Josh Kenitzer                                ║');
+  console.log('║       Lorae / Josh Kenitzer                                ║');
   console.log('╚══════════════════════════════════════════════════════════╝');
 
   testApiContract();
