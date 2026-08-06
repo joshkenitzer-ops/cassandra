@@ -1,5 +1,3 @@
-[README.md](https://github.com/user-attachments/files/29339928/README.md)
-
 # Cassandra
 
 > *She always told the truth. Now she has a UI.*
@@ -46,7 +44,7 @@ Each finding is returned with a severity rating and a recommended fix.
 
 ```
 cassandra/
-├── Cassandra.jsx                    # Core evaluation logic and UI
+├── cassandra.jsx                    # Core evaluation logic and UI
 ├── api/evaluate.js                  # Vercel serverless function
 ├── cassandra.test.js                # Unit tests
 ├── cassandra.integration.test.js    # Integration tests
