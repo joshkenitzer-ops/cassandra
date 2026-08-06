@@ -6,7 +6,7 @@
 
 **Cassandra** is a prompt red-teaming tool. It finds the ways your prompt will fail before your users do.
 
-Part of the [Lorae](https://github.com/joshkenitzer-ops/lore) toolkit.
+Part of the [Lorae](https://github.com/joshkenitzer-ops/lorae) toolkit.
 
 ---
 
