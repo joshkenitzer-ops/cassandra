@@ -12,17 +12,17 @@ Part of the [Lorae](https://github.com/joshkenitzer-ops/lorae) toolkit.
 
 You write a prompt against a spec. Cassandra tries to break both.
 
-It runs a structured adversarial evaluation against your prompt and the spec behind it, checking for:
+It runs a structured adversarial evaluation against your prompt or spec, checking seven fixed dimensions:
 
-- **Ambiguity**: instructions that can be read more than one way
-- **Edge case failure**: inputs your prompt wasn't designed for
-- **Boundary violations**: where the prompt under- or over-constrains the model
-- **Prompt injection surface**: where user input could redirect behavior
-- **Output instability**: where small input variations produce large output swings
-- **Scope creep**: where the model is likely to go beyond what you asked
-- **Minimum viability**: inputs too short or underspecified to be acted on (< 30 words returns `INSUFFICIENT_INPUT`)
+- **Logic Gaps**
+- **Hallucination Risk**
+- **Ambiguity Traps**
+- **Scope Creep**
+- **Edge Case Blindspots**
+- **Instruction Conflicts**
+- **Output Format Risk**
 
-Each finding is returned with a severity rating and a recommended fix.
+Each dimension is scored critical, high, medium, low, or pass, with a specific finding and a recommended fix for anything that isn't clean. Input under 30 words returns `INSUFFICIENT_INPUT` rather than fabricated findings, and the overall result carries a one-sentence summary and a 0-100 score.
 
 ---
 
@@ -59,7 +59,8 @@ cassandra/
 - [ ] CLI (`cassandra evaluate <prompt>`)
 - [x] Vercel web UI
 - [ ] Severity rubric documentation
-- [ ] Structured evaluation against Vulcan-authored specs, not standalone prompts alone
+- [ ] Document-type awareness: today every input runs through the same seven dimensions; planned is inferring the document's purpose and adopting the review persona it needs
+- [ ] A dedicated spec-failure-mode taxonomy, drawn from IEEE requirements engineering research: Absence, Incompleteness, Contradiction, Premature Definition, Silent Constraint Drop, Scope Drift
 
 ---
 
