@@ -2,7 +2,7 @@
 
 > *She always told the truth. Now she has a UI.*
 
-**Cassandra** is a prompt red-teaming tool. It finds the ways your prompt will fail before your users do.
+**Cassandra** is an adversarial evaluation tool. It tests a prompt against its governing spec and the failure modes production LLM applications reliably run into, finding the ways it will fail before your users do.
 
 Part of the [Lorae](https://github.com/joshkenitzer-ops/lorae) toolkit.
 
@@ -10,9 +10,9 @@ Part of the [Lorae](https://github.com/joshkenitzer-ops/lorae) toolkit.
 
 ## What it does
 
-You write a prompt. Cassandra tries to break it.
+You write a prompt against a spec. Cassandra tries to break both.
 
-It runs a structured adversarial evaluation against your prompt, checking for:
+It runs a structured adversarial evaluation against your prompt and the spec behind it, checking for:
 
 - **Ambiguity**: instructions that can be read more than one way
 - **Edge case failure**: inputs your prompt wasn't designed for
@@ -73,7 +73,7 @@ Most prompt failures are discoverable before anyone uses the prompt. Ambiguous i
 
 | Tool | Description |
 |------|-------------|
-| **Cassandra** | Prompt red-teaming, live |
+| **Cassandra** | Prompt and spec red-teaming, live |
 | [Iris](https://github.com/joshkenitzer-ops/iris) | Resume and cover letter tailoring, live in private beta |
 | [Vulcan](https://github.com/joshkenitzer-ops) | Prompt engineering on the FORGE methodology |
 | [Janus](https://github.com/joshkenitzer-ops/janus) | Session context management |
