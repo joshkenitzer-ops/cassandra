@@ -65,7 +65,7 @@ cassandra/
 
 ## Philosophy
 
-Most prompt failures are discoverable before anyone uses the prompt. Ambiguous instructions, inputs the prompt wasn't designed for, logic gaps, injection surfaces: these aren't unpredictable. They're findable with the right evaluation. Cassandra exists to run that evaluation systematically, testing a prompt both against the failure modes that reliably show up in production LLM applications and against the spec it was written to satisfy, so nothing ships on the strength of one read-through by the person who wrote it.
+Most prompt failures are discoverable before anyone uses the prompt, and most spec failures are discoverable before anyone builds against it. Ambiguous instructions, inputs the prompt wasn't designed for, logic gaps, injection surfaces, requirements a prompt only half-satisfies: none of it is a mystery. It's a bug sitting in plain sight, findable with the right evaluation. Cassandra exists to find it first, testing a prompt against the failure modes that reliably wreck production LLM applications and against the spec it was written to satisfy, so nothing ships on the strength of one read-through by the person who wrote it.
 
 ---
 
