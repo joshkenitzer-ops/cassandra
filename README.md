@@ -4,7 +4,7 @@
 
 **Cassandra** is a prompt red-teaming tool. It finds the ways your prompt will fail before your users do.
 
-Part of the [Lore](https://github.com/joshkenitzer-ops/lore) toolkit.
+Part of the [Lorae](https://github.com/joshkenitzer-ops/lorae) toolkit.
 
 ---
 
@@ -26,13 +26,17 @@ Each finding is returned with a severity rating and a recommended fix.
 
 ---
 
+## Live Demo
+
+[cassandra-app-theta.vercel.app](https://cassandra-app-theta.vercel.app)
+
 ## Status
 
-**v0.1**: code and test suite only. Not yet runnable as a standalone tool.
+**v0.1**: live and deployed.
 
 - 154 passing tests (Jest)
 - Core evaluation logic complete
-- CLI and UI in development
+- Deployed via Vercel at cassandra-app-theta.vercel.app
 
 ---
 
@@ -41,8 +45,10 @@ Each finding is returned with a severity rating and a recommended fix.
 ```
 cassandra/
 ├── Cassandra.jsx                    # Core evaluation logic and UI
+├── api/evaluate.js                  # Vercel serverless function
 ├── cassandra.test.js                # Unit tests
 ├── cassandra.integration.test.js    # Integration tests
+├── vercel.json                      # Deployment config
 └── README.md
 ```
 
@@ -51,25 +57,28 @@ cassandra/
 ## Roadmap
 
 - [ ] CLI (`cassandra evaluate <prompt>`)
-- [ ] Vercel web UI
+- [x] Vercel web UI
 - [ ] Severity rubric documentation
-- [ ] Integration with Hermes pipeline
+- [ ] Structured evaluation against Vulcan-authored specs, not standalone prompts alone
 
 ---
 
 ## Philosophy
 
-Most prompt failures are discoverable before anyone uses the prompt. Ambiguous instructions, inputs the prompt wasn't designed for, logic gaps, injection surfaces: these aren't unpredictable. They're findable with the right evaluation. Cassandra exists to run that evaluation systematically, so that any prompt that ships has been tested against the failure modes that reliably show up in production LLM applications.
+Most prompt failures are discoverable before anyone uses the prompt. Ambiguous instructions, inputs the prompt wasn't designed for, logic gaps, injection surfaces: these aren't unpredictable. They're findable with the right evaluation. Cassandra exists to run that evaluation systematically, testing a prompt both against the failure modes that reliably show up in production LLM applications and against the spec it was written to satisfy, so nothing ships on the strength of one read-through by the person who wrote it.
 
 ---
 
-## Part of Lore
+## Part of Lorae
 
 | Tool | Description |
 |------|-------------|
-| **Cassandra** | Prompt red-teaming |
+| **Cassandra** | Prompt red-teaming, live |
+| [Iris](https://github.com/joshkenitzer-ops/iris) | Resume and cover letter tailoring, live in private beta |
+| [Vulcan](https://github.com/joshkenitzer-ops) | Prompt engineering on the FORGE methodology |
 | [Janus](https://github.com/joshkenitzer-ops/janus) | Session context management |
-| [Hermes](https://github.com/joshkenitzer-ops/hermes) | Document pipeline |
+| [Thoth](https://github.com/joshkenitzer-ops) | Feedback intelligence layer |
+| [Ma'at](https://github.com/joshkenitzer-ops) | Automated code review |
 
 ---
 
