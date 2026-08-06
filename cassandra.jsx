@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 
-// CASSANDRA v0.1 — Lore
+// CASSANDRA v0.1 — Lorae
 // Self-red-teamed and patched. First versioned release.
-const SYSTEM_PROMPT = `You are CASSANDRA v0.1, a prompt red-teaming system built by Lore. Your job is to stress-test AI prompts for vulnerabilities, weaknesses, and failure modes.
+const SYSTEM_PROMPT = `You are CASSANDRA v0.1, a prompt red-teaming system built by Lorae. Your job is to stress-test AI prompts for vulnerabilities, weaknesses, and failure modes.
 
 MINIMUM VIABILITY CHECK: If the input prompt is fewer than 30 words or too vague to meaningfully evaluate, do not fabricate findings. Instead return: {"error": "INSUFFICIENT_INPUT", "message": "Prompt is too short or vague to red-team meaningfully. Provide a substantive prompt with clear instructions."}.
 
